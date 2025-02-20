@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="math.js"></script>
+  <title>
+    Math Calculators
+  </title>
+  <link rel="stylesheet" type="text/css" href="math.css">
+</head>
+
+<body onload="cl()">
+  <h1 align="center">MATHS CALCULATORS</h1>
+    <div class="mathcal" id="mc3" onclick="calculator()"><span class="text">Digital Calculator</span></div>
+    <div class="mathcal" id="mc0" onclick="trigop()"><span class="text">Trigonometry</span>
+    </div>
+    <div class="mathcal" id="mc1" onclick="areaop()"><span class="text">Area</span></div>
+    <div class="mathcal" id="mc2" onclick="perimeter()"><span class="text">Perimeter</span></div>
+  <section id="blur">
+    <form id="trig" name="f1" class="calscr">
+      <aside onclick="cl()" class="x"><i class="fa fa-times"></i></aside>
+      <h3>Enter value of angles and find values</h3>
+      <hr>
+      <section id="sct">
+        sin(<input type="number" name="s" value="0"><sup><i class="fa fa-circle-o" aria-hidden="true"></i></sup>) = <div id="sin"></div><br>
+        <aside onclick="inv()" class="nexttrig" id="rnt"><i class="fa fa-arrow-circle-right"></i></aside>
+        cos(<input type="number" name="c" value="0"><sup><i class="fa fa-circle-o" aria-hidden="true"></i></sup>) = <div id="cos"></div><br>
+        tan(<input type="number" name="t" value="0"><sup><i class="fa fa-circle-o" aria-hidden="true"></i></sup>) = <div id="tan"></div><br>
+        <button onclick="trig()" type="button">Check</button>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+      <section id="csc">
+        cosec(<input type="number" name="cs" value="0"><sup><i class="fa fa-circle-o" aria-hidden="true"></i></sup>) = <div id="cosec"></div><br>
+        <aside onclick="inv2()" class="nexttrig" id="lnt">
+          <i class="fa fa-arrow-circle-left"></i> </aside>
+        sec(<input type="number" name="sc" value="0"><sup><i class="fa fa-circle-o" aria-hidden="true"></i></sup>) = <div id="sec"></div><br>
+        cot(<input type="number" name="ct" value="0"><sup><i class="fa fa-circle-o" aria-hidden="true"></i></sup>) = <div id="cot"></div><br>
+        <button onclick="trig2()" type="button">Check</button>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+    </form>
+    <form class="calscr" name="f2" id="area">
+      <aside onclick="cl()" class="x"><i class="fa fa-times"></i></aside>
+      <h3>Area Calculators</h3>
+      <hr>
+      <section id="first">
+        <h4 align="center"> <u>1. Triangle</u></h4>
+        Enter value of height:
+        <input type="number" name="t1" onkeyup="areacal()"><br>
+        <aside onclick="anext()" class="nexttrig" id="anext"><i class="fa fa-arrow-circle-right"></i></aside>
+        Enter value of base:
+        <input type="number" name="t2" onkeyup="areacal()"><br>
+        Calculated Area of the triangle:
+        <div id="areatrig"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+      <section id="rectangle">
+        <h4 align="center"> <u>2. Rectangle/square</u></h4>
+        Enter value of length:
+        <input type="number" name="r1" onkeyup="areacal()"><br>
+        <aside onclick="aprev()" class="nexttrig" id="aprev"><i class="fa fa-arrow-circle-left"></i></aside>
+        <aside onclick="bnext()" class="nexttrig" id="anext"><i class="fa fa-arrow-circle-right"></i></aside>
+        Enter value of breadth:
+        <input type="number" name="r2" onkeyup="areacal()"><br>
+        Calculated Area:
+        <div id="arearect"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+      <section id="pent">
+        <h4 align="center"><u>3. Regular Pentagon</u></h4>
+        Enter value of a side =
+        <input type="number" name="p1" onkeyup="areacal()"><br>
+        <aside onclick="bprev()" class="nexttrig" id="aprev"><i class="fa fa-arrow-circle-left"></i></aside>
+        <aside onclick="cnext()" class="nexttrig" id="anext"><i class="fa fa-arrow-circle-right"></i></aside>
+        Calculated Area =
+        <div id="areapent"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+        </section>
+      <section id="hex">
+        <h4 align="center"><u>4. Regular Hexagon</u></h4>
+        Enter value of a side =
+        <input type="number" name="he1" onkeyup="areacal()"><br>
+        <aside onclick="cprev()" class="nexttrig" id="aprev"><i class="fa fa-arrow-circle-left"></i></aside>
+        <aside onclick="dnext()" class="nexttrig" id="anext"><i class="fa fa-arrow-circle-right"></i></aside>
+        Calculated Area =
+        <div id="areahex"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+      <section id="hep">
+        <h4 align="center"><u>5. Regular Heptagon</u></h4>
+        Enter value of a side =
+        <input type="number" name="hep1" onkeyup="areacal()"><br>
+        <aside onclick="dprev()" class="nexttrig" id="aprev"><i class="fa fa-arrow-circle-left"></i></aside>
+        Calculated Area =
+        <div id="areahep"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+    </form>
+    <form class="calscr" name="f3" id="perimeter">
+      <aside onclick="cl()" class="x"><i class="fa fa-times"></i></aside>
+      <h3>Perimeter</h3>
+      <hr>
+      <section id="pfirst">
+        <h4 align="center"> <u>1. Triangle</u></h4>
+        Enter value of first side:
+        <input type="number" name="t1" onkeyup="perical()"><br>
+        <aside onclick="panext()" class="nexttrig" id="panext"><i class="fa fa-arrow-circle-right"></i></aside>
+        Enter value of second side:
+        <input type="number" name="t2" onkeyup="perical()"><br>
+        Enter value of third side:
+        <input type="number" name="t3" onkeyup="perical()"><br>
+        Calculated Perimeter of the triangle:
+        <div id="peritrig"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+      <section id="prectangle">
+        <h4 align="center"> <u>2. Rectangle/square</u></h4>
+        Enter value of length:
+        <input type="number" name="r1" onkeyup="perical()"><br>
+        <aside onclick="paprev()" class="nexttrig" id="paprev"><i class="fa fa-arrow-circle-left"></i></aside>
+        <aside onclick="pbnext()" class="nexttrig" id="panext"><i class="fa fa-arrow-circle-right"></i></aside>
+        Enter value of breadth:
+        <input type="number" name="r2" onkeyup="perical()"><br>
+        Calculated Perimeter:
+        <div id="perirect"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+      <section id="ppent">
+        <h4 align="center"><u>3. Regular Pentagon</u></h4>
+        Enter value of a side =
+        <input type="number" name="p1" onkeyup="perical()"><br>
+        <aside onclick="pbprev()" class="nexttrig" id="paprev"><i class="fa fa-arrow-circle-left"></i></aside>
+        <aside onclick="pcnext()" class="nexttrig" id="panext"><i class="fa fa-arrow-circle-right"></i></aside>
+        Calculated Perimeter =
+        <div id="peripent"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+      <section id="phex">
+        <h4 align="center"><u>4. Regular Hexagon</u></h4>
+        Enter value of a side =
+        <input type="number" name="he1" onkeyup="perical()"><br>
+        <aside onclick="pcprev()" class="nexttrig" id="paprev"><i class="fa fa-arrow-circle-left"></i></aside>
+        <aside onclick="pdnext()" class="nexttrig" id="panext"><i class="fa fa-arrow-circle-right"></i></aside>
+        Calculated Perimeter =
+        <div id="perihex"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+      <section id="phep">
+        <h4 align="center"><u>5. Regular Heptagon</u></h4>
+        Enter value of a side =
+        <input type="number" name="hep1" onkeyup="perical()"><br>
+        <aside onclick="pdprev()" class="nexttrig" id="paprev"><i class="fa fa-arrow-circle-left"></i></aside>
+        Calculated Perimeter =
+        <div id="perihep"></div><br>
+        <button type="reset" onclick="clr()">Clear</button>
+      </section>
+      </section>
+    </form>
+  </section>
+</body>
+
+</html>

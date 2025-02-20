@@ -1,0 +1,132 @@
+body{
+  background: #00ABFF;
+  color: #FF0000;
+  height: 80px;
+  border: 3px dashed #FF0000;
+}
+.mathcal {
+  color: #B3B9FF;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  border-radius: 10%;
+  width: 55vh;
+  height: 26vh;
+  font-size: 8vh;
+  background: #363A62;
+  overflow: hidden;
+  box-shadow: 5px 9px 11px #2C2D37;
+  cursor: pointer;
+}
+.mathcal:hover{
+  background: #2E314B;
+}
+sup{
+  font-size: 1vh;
+}
+
+.scroll a {
+  color: #B3B9FF;
+  text-decoration: none;
+}
+.x {
+  justify-self: right;
+  color: red;
+  font-size: 30px;
+  margin-bottom: -20px;
+  margin-right: 20px;
+  width: 2%;
+}
+
+
+#mc2,
+#mc1,
+#mc0,
+#mc3{
+  margin-top: 20vh;
+}
+
+.scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+}
+
+#blur {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #636363BD;
+  display: none;
+}
+
+.calscr {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  padding: 10px;
+  border: 3px solid #FF5D00E8;
+  border-radius: 10%;
+  background: #46485ED9;
+  display: none;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #00FFED;
+}
+
+.calscr h3 {
+  color: #FBFF00;
+}
+.calscr h4{
+  color: red;
+  margin-top: -2px;
+}
+
+.calscr input {
+  width: 60px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.calscr div {
+  width: 80%;
+  height: 20px;
+  background: white;
+  color: black;
+  font-size: 20px;
+  justify-self: center;
+}
+#area{
+  display: none;
+}
+#csc {
+  display: none;
+}
+
+.nexttrig {
+  position: absolute;
+  margin-top: -30px;
+  color: #00FF2A;
+  font-weight: bolder;
+  font-size: 5vh;
+  background: transparent;
+}
+#lnt{
+    left: 8px;
+}
+#rnt, #anext, #panext{
+    right: 8px;
+}
+#rectangle, #pent, #hex, #hep, #prectangle, #ppent, #phex, #phep{
+  display: none;
+}
