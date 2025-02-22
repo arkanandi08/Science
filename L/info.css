@@ -1,0 +1,13 @@
+body{
+font-size: 2vh;
+margin-left: 2vh;
+background: #212121;
+color: white
+}
+.back{
+  font-size: 4vh;
+  background: #001C5C;
+  padding: 5px;
+  border-radius: 10%;
+  width: 14vh;
+}
