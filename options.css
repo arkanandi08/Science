@@ -1,5 +1,5 @@
 body {
-   background-image: linear-gradient(90deg, blue, green);
+   background-image: url("bg.jpg");
    display: flex;
    flex-direction: column;
    align-items: center;

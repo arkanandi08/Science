@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sun - Celestial Information</title>
-    <link rel="stylesheet" href="sun.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sun - Celestial Information</title>
+  <link rel="stylesheet" href="sun.css">
 </head>
+<style>
+  .info {
+    display: flex;
+    justify-content: center;
+    padding: 7%;
+    margin-top: 15%;
+    margin-left: 25%;
+    border: 2px dashed black;
+    background: #FF610082;
+  }
+
+  body {
+    background-image: url("sun.jpg");
+  }
+</style>
+
 <body>
-    <div class="info-overlay">
-        <div class="content">
-            <h1 align="center" id="celestial-name">The Sun</h1>
-            <p id="classification"><strong>Classification:</strong> Main-sequence star (G-type, Yellow Dwarf)</p>
-            <p id="discovery"><strong>Discovery & History:</strong> The Sun has been observed since ancient times and is central to many mythologies and scientific studies.</p>
-            <p id="size"><strong>Size & Structure:</strong> Diameter of about 1.39 million km, composed mostly of hydrogen and helium.</p>
-            <p id="atmosphere"><strong>Atmosphere & Climate:</strong> Composed of layers like the photosphere, chromosphere, and corona; surface temperature ~5,500°C, core ~15 million°C.</p>
-            <p id="orbit"><strong>Orbital Details:</strong> The Sun orbits the center of the Milky Way at ~828,000 km/h, taking ~225-250 million years to complete one orbit.</p>
-            <p id="moons"><strong>Moons & Rings:</strong> No moons or rings, but it has a powerful magnetic field and solar wind.</p>
-            <p id="features"><strong>Notable Features:</strong> Sunspots, solar flares, coronal mass ejections, and the solar cycle (~11 years).</p>
-            <p id="habitability"><strong>Habitability & Exploration:</strong> Supports life on Earth; studied by probes like Parker Solar Probe and SOHO.</p>
-            <p id="fun-facts"><strong>Fun Facts:</strong> The Sun makes up ~99.8% of the solar system’s mass, and its light takes ~8 minutes to reach Earth.</p>
-        </div>
+  <div class="info">
+    <div class="content">
+      <h1 align="center" id="celestial-name">The Sun</h1>
+      <h3 id="classification">Classification: </h3>
+      <p>Main-sequence star (G-type, Yellow Dwarf)</p>
+      <h3 id="discovery">Discovery & History: </h3>
+      <p> The Sun has been observed since ancient times and is central to many mythologies and scientific studies.</p>
+      <h3 id="size">Size & Structure:</h3>
+      <p> Diameter of about 1.39 million km, composed mostly of hydrogen and helium.</p>
+      <h3 id="atmosphere"><strong>Atmosphere & Climate:</strong> </h3>
+      <p> Composed of layers like the photosphere, chromosphere, and corona; surface temperature ~5,500°C, core ~15 million°C.</p>
+      <h3 id="orbit"><strong>Orbital Details:</strong> </h3>
+      <p> The Sun orbits the center of the Milky Way at ~828,000 km/h, taking ~225-250 million years to complete one orbit.</p>
+      <h3 id="moons"><strong>Moons & Rings:</strong> </h3>
+      <p>No moons or rings, but it has a powerful magnetic field and solar wind.</p>
+      <h3 id="features"><strong>Notable Features:</strong> </h3>
+      <p>Sunspots, solar flares, coronal mass ejections, and the solar cycle (~11 years).</p>
+      <h3 id="habitability"><strong>Habitability & Exploration:</strong> </h3>
+      <p> Supports life on Earth; studied by probes like Parker Solar Probe and SOHO.</p>
+      <h3 id="fun-facts"><strong>Fun Facts:</strong> </h3>
+      <p>The Sun makes up ~99.8% of the solar system’s mass, and its light takes ~8 minutes to reach Earth.</p>
     </div>
+  </div>
 </body>
+
 </html>
