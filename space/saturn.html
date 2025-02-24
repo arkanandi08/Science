@@ -3,9 +3,25 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>
-    Neptune
+    Saturn
   </title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+  .sat {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vh;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+
+.sat:hover {
+  width: 90vh;
+  left: 50%;
+}
+  </style>
 </head>
 
 <body>
@@ -14,19 +30,19 @@
       </div>
     </div>
     <header>
-      Neptune
+      Saturn
     </header>
     <p align="center">
-      <a href="nepi.html">
-        <img src="nep.gif" alt="Planet" class="planetim" id="planetim">
+      <a href="sati.html">
+        <img src="saturn.gif" alt="Planet" class="sat">
       </a>
     </p>
     <p id="rocket1">
-      <img src="shiphover.gif" id="shiphovL" onclick="window.location.href='uranus.html'">
+      <img src="shiphover.gif" id="shiphovL" onclick="window.location.href='jupiter.html'">
       <img src="ship.png" class="shipL">
     </p>
     <p id="rocket2">
-      <img src="shiphover.gif" id="shiphovR" onclick="window.location.href='pluto.html'">
+      <img src="shiphover.gif" id="shiphovR" onclick="window.location.href='uranus.html'">
       <img src="ship.png" class="shipR">
     </p>
 </body>

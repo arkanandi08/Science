@@ -1,0 +1,115 @@
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0a192f;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(90deg, #000f2b, #243B55);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 2vh;
+      bottom: 2vh;
+      left: 2vh;
+      right: 2vh;
+    }
+
+    h1 {
+      font-size: 8vh;
+      font-weight: 600;
+      letter-spacing: 2px;
+      background: linear-gradient(70deg, #8080e6, #52ff85);
+      color: #4000b2;
+      border-radius: 30px;
+      box-shadow: 0px 0px 20px 15px #5926d9;
+      width: 50vh;
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -30%);
+    }
+
+    .p1 {
+      font-size: 5vh;
+      font-weight: 300;
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+      transform: translate(-50%, 30%);
+    }
+
+    .p2 {
+      font-size: 5vh;
+      font-weight: 300;
+      position: absolute;
+      left: 50%;
+      top: 112%;
+      transform: translate(-50%, 30%);
+    }
+
+    h2 {
+      position: absolute;
+      top: 108%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 7vh;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #ff9800, #e91e63);
+      color: white;
+      text-decoration: none;
+      font-size: 4vh;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.5);
+      position: absolute;
+      left: 50%;
+      top: 170%;
+      transform: translate(-50%, -50%);
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #e91e63, #ff9800);
+      box-shadow: 0px 4px 10px rgba(233, 30, 99, 0.5);
+      padding: 15px 27px;
+    }
+
+    .divider {
+      width: 60%;
+      height: 1vh;
+      background: linear-gradient(90deg, #ff9800, #e91e63);
+      border-radius: 10px;
+      position: absolute;
+      top: 103%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .aarea {
+      height: 20px;
+      top: 150%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+    }
+
+    .arrow {
+      font-size: 9vh;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
