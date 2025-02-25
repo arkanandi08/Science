@@ -1,19 +1,33 @@
 body {
-   background-image: url("bg.jpg");
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   height: 100vh;
-   margin: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("bg.jpg") no-repeat center center/cover;
+  font-family: Arial, sans-serif;
 }
-.container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 16vh;
+
+.button {
+  width: 250px;
+  padding: 15px;
+  margin: 25px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.math, .chemistry, .universe {
+
+.math,
+.chemistry,
+.universe {
   border: 2px solid;
   padding: 5px;
   width: 270px;
@@ -32,23 +46,20 @@ body {
 
 .math {
   border-color: #00bd85 #2e73a3 #0047de #e6485c;
-  background-image: linear-gradient(90deg, purple, yellow, indigo);
-  color: #3800ff;
+  background: linear-gradient(to right, purple, yellow);
 }
 
 .chemistry {
   border-color: #ff3d66 #1ab24c #2459c9 #ed468d;
-  background-image: linear-gradient(90deg, green, pink, blue);
-  color: #9900ff;
+  background: linear-gradient(to right, green, blue);
 }
 
 .universe {
-  border-color: #00bd85 #2e73a3 #0047de #e6485c;
-  background-image: linear-gradient(90deg, red, orange, red);
-  color: #00a659;
+  border-color: #00BD85 #FF0000 #0047DE #4855E6;
+  background: linear-gradient(to right, red, orange);
 }
 
-.math:active, .chemistry:active, .universe:active {
-  transform: scale(0.95);
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px #000000D9;
 }

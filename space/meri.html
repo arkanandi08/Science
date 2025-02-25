@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercury - Celestial Information</title>
 
@@ -11,8 +11,8 @@
     display: flex;
     justify-content: center;
     padding: 7%;
-    margin-top: 15%;
-    margin-left: 25%;
+margin: 15%;
+
     border: 2px dashed black;
     background: #78320091;
     color: #FFFFFF
@@ -20,8 +20,18 @@
   body {
     background-image: url("mercury.jpg");
   }
-</style>
-<body>
+  .back {
+  font-size: 4vh;
+  background: #001C5C;
+  padding: 5px;
+  border-radius: 10%;
+  width: 14vh;
+  color: #FFFFFF;
+  }
+  </style>
+
+  <body>
+    <div onclick="window.history.back();" class="back"> <i class="fa fa-arrow-left"></i> Back </div>
     <div class="info">
         <div class="content">
             <h1 align="center" id="celestial-name">Mercury</h1>

@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earth - Celestial Information</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earth - Celestial Information</title>
 
 </head>
 <style>
-  .info{
+  .info {
     display: flex;
     justify-content: center;
     padding: 7%;
-    margin-top: 15%;
-    margin-left: 25%;
+    margin: 15%;
     border: 2px dashed black;
     background: #06338C87;
-    color:#FFFFFF;
+    color: #FFFFFF;
   }
+
   body {
     background-image: url("earth.jpg");
   }
+
+  .back {
+    font-size: 4vh;
+    background: #001C5C;
+    padding: 5px;
+    border-radius: 10%;
+    width: 14vh;
+    color: #FFFFFF;
+  }
 </style>
+
 <body>
-    <div class="info">
-        <div class="content">
-            <h1 align="center" id="celestial-name">Earth</h1>
-            <h3 id="classification"><strong>Classification:</strong> </h3> <p>
-            Terrestrial Planet</p>
-            <h3 id="discovery"><strong>Discovery & History:</strong></h3> <p> The only known planet with life; studied extensively throughout human history.</p>
-            <ph3 id="size"><strong>Size & Structure:</strong> </h3> <p> Diameter of 12,742 km; composed of a solid inner core, liquid outer core, mantle, and crust.</p>
-            <h3 id="atmosphere"><strong>Atmosphere & Climate:</strong></h3> <p> Nitrogen (78%) and oxygen (21%) dominant atmosphere; supports diverse climates and weather patterns.</p>
-            <h3 id="orbit"><strong>Orbital Details:</strong> </h3> <p> Orbits the Sun in 365.25 days; rotates once every ~24 hours.</p>
-            <h3 id="moons"><strong>Moons & Rings:</strong> </h3>  <p>One natural satellite, the Moon; no rings.</p>
-            <h3 id="features"><strong>Notable Features:</strong> </h3> <p>The only known planet with liquid water, a stable atmosphere, and diverse ecosystems.</p>
-            <h3 id="habitability"><strong>Habitability & Exploration:</strong> </h3><p>  The only known habitable planet; extensively explored by human missions and satellites.</p>
-            <h3 id="fun-facts"><strong>Fun Facts:</strong> <p> 70% of Earth's surface is covered by water, and it has the perfect conditions to sustain life.</p>
-        </div>
-    </div>
+  <div onclick="window.history.back();" class="back"> <i class="fa fa-arrow-left"></i> Back </div>
+<div class="info">
+  <div class="content">
+    <h1 align="center" id="celestial-name">Earth</h1>
+    <h3 id="classification"><strong>Classification:</strong> </h3>
+    <p>
+      Terrestrial Planet</p>
+    <h3 id="discovery"><strong>Discovery & History:</strong></h3>
+    <p> The only known planet with life; studied extensively throughout human history.</p>
+    <ph3 id="size"><strong>Size & Structure:</strong> </h3>
+      <p> Diameter of 12,742 km; composed of a solid inner core, liquid outer core, mantle, and crust.</p>
+      <h3 id="atmosphere"><strong>Atmosphere & Climate:</strong></h3>
+      <p> Nitrogen (78%) and oxygen (21%) dominant atmosphere; supports diverse climates and weather patterns.</p>
+      <h3 id="orbit"><strong>Orbital Details:</strong> </h3>
+      <p> Orbits the Sun in 365.25 days; rotates once every ~24 hours.</p>
+      <h3 id="moons"><strong>Moons & Rings:</strong> </h3>
+      <p>One natural satellite, the Moon; no rings.</p>
+      <h3 id="features"><strong>Notable Features:</strong> </h3>
+      <p>The only known planet with liquid water, a stable atmosphere, and diverse ecosystems.</p>
+      <h3 id="habitability"><strong>Habitability & Exploration:</strong> </h3>
+      <p> The only known habitable planet; extensively explored by human missions and satellites.</p>
+      <h3 id="fun-facts"><strong>Fun Facts:</strong>
+        <p> 70% of Earth's surface is covered by water, and it has the perfect conditions to sustain life.</p>
+  </div>
+</div>
 </body>
+
 </html>

@@ -10,8 +10,8 @@
     display: flex;
     justify-content: center;
     padding: 7%;
-    margin-top: 15%;
-    margin-left: 25%;
+margin: 15%;
+
     border: 2px dashed black;
     background: #5F210478;
     color: #FFFFFF;
@@ -20,8 +20,18 @@
     background-image: url("mars.jpg");
   }
   
+  .back {
+    font-size: 4vh;
+    background: #001C5C;
+    padding: 5px;
+    border-radius: 10%;
+    width: 14vh;
+    color: #FFFFFF;
+  }
 </style>
+
 <body>
+  <div onclick="window.history.back();" class="back"> <i class="fa fa-arrow-left"></i> Back </div>
     <div class="info">
         <div class="content">
             <h1 align="center" id="celestial-name">Mars</h1>
