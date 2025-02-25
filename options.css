@@ -13,10 +13,10 @@ body {
 .button {
   border: 5px solid;
   display: flex;
-  width: 50vh;
+  width: 90vh;
   justify-content: center;
   align-items: center;
-  font-size: 8vh;
+  font-size: 9vh;
   font-family: cursive;
   font-weight: bold;
   cursor: pointer;
@@ -28,12 +28,12 @@ body {
 .math {
   border-color: #00bd85 #2e73a3 #0047de #e6485c;
   background: linear-gradient(to right, purple, yellow);
+  margin-top: 15vh;
 }
 
 .chemistry {
   border-color: #ff3d66 #1ab24c #2459c9 #ed468d;
   background: linear-gradient(to right, green, blue);
-  margin-top: 15vh;
 }
 
 .universe {

@@ -29,7 +29,7 @@ table {
 
 .f {
   width: 90%;
-  transform: translateX(-40%);
+  transform: translateX(-53%);
   position: absolute;
   left: 50%;
 }
@@ -125,5 +125,6 @@ th:hover .esym {
 }
 
 .series {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }

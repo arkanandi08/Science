@@ -16,22 +16,22 @@
     }
 
     h1 {
-      font-size: 8vh;
+      font-size: 12vh;
       font-weight: 600;
       letter-spacing: 2px;
       background: linear-gradient(70deg, #8080e6, #52ff85);
       color: #4000b2;
       border-radius: 30px;
       box-shadow: 0px 0px 20px 15px #5926d9;
-      width: 50vh;
+      width: 70vh;
       position: absolute;
       left: 50%;
-      top: 30%;
+      top: 25%;
       transform: translate(-50%, -30%);
     }
 
     .p1 {
-      font-size: 5vh;
+      font-size: 6vh;
       font-weight: 300;
       position: absolute;
       left: 50%;
@@ -44,13 +44,13 @@
       font-weight: 300;
       position: absolute;
       left: 50%;
-      top: 112%;
+      top: 125%;
       transform: translate(-50%, 30%);
     }
 
     h2 {
       position: absolute;
-      top: 108%;
+      top: 115%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 7vh;
@@ -68,7 +68,7 @@
       box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.5);
       position: absolute;
       left: 50%;
-      top: 170%;
+      top: 190%;
       cursor: pointer;
       transform: translate(-50%, -50%);
     }
@@ -98,7 +98,7 @@
 
     .aarea {
       height: 20px;
-      top: 150%;
+      top: 170%;
       left: 50%;
       transform: translate(-50%, -50%);
       position: absolute;
