@@ -72,12 +72,12 @@
       document.getElementById("arearect").innerText = "";
       document.getElementById("areapent").innerText = "";
       document.getElementById("areahex").innerText = "";
-      document.getElementById("areahep").innerText = "";
+      document.getElementById("areacir").innerText = "";
       document.getElementById("peritrig").innerText = "";
       document.getElementById("perirect").innerText = "";
       document.getElementById("peripent").innerText = "";
       document.getElementById("perihex").innerText = "";
-      document.getElementById("perihep").innerText = "";
+      document.getElementById("pericir").innerText = "";
       }
     function areaop() {
       document.getElementById("area").style.display = "block";
@@ -100,9 +100,9 @@
       var hs = f2.he1.value;
       var ah = 2.59808 * hs * hs;
       document.getElementById("areahex").innerText = ah + "(unit)²"
-      var hps = f2.hep1.value;
-      var ahp = 3.63391 * hps * hps;
-      document.getElementById("areahep").innerText = ahp + "(unit)²"    }
+      var hps = f2.cir1.value;
+      var ahp = 22/7 * hps * hps;
+      document.getElementById("areacir").innerText = ahp + "(unit)²"    }
     function anext() {
       document.getElementById("first").style.display = "none";
       document.getElementById("rectangle").style.display = "block";
@@ -129,11 +129,11 @@
       }
     function dnext() {
       document.getElementById("hex").style.display = "none";
-      document.getElementById("hep").style.display = "block";
+      document.getElementById("cir").style.display = "block";
     }
     function dprev() {
       document.getElementById("hex").style.display = "block";
-      document.getElementById("hep").style.display = "none";
+      document.getElementById("cir").style.display = "none";
       }
     function perimeter() {
       document.getElementById("perimeter").style.display = "block";
@@ -157,9 +157,9 @@
       var hs = parseInt(f3.he1.value);
       var ah = 6 * hs;
       document.getElementById("perihex").innerText = ah + "unit"
-      var hps = parseInt(f3.hep1.value);
-      var ahp = 7 * hps;
-      document.getElementById("perihep").innerText = ahp + "unit"
+      var r = parseInt(f3.cir1.value);
+      var ac = 2*22/7*r;
+      document.getElementById("pericir").innerText = ac + "unit"
     }
         function panext() {
       document.getElementById("pfirst").style.display = "none";
@@ -187,11 +187,11 @@
       }
     function pdnext() {
       document.getElementById("phex").style.display = "none";
-      document.getElementById("phep").style.display = "block";
+      document.getElementById("pcir").style.display = "block";
     }
     function pdprev() {
       document.getElementById("phex").style.display = "block";
-      document.getElementById("phep").style.display = "none";
+      document.getElementById("pcir").style.display = "none";
       }
       function calculator(){
         window.location.href="calculator.html";

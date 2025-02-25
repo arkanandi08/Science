@@ -2,6 +2,17 @@ body {
   color: white;
   background-color: #212121;
 }
+.bck {
+  position: fixed;
+  top: 1vh;
+  left: 1vh;
+  color: white;
+  border: 2px solid;
+  background: #36365AFC;
+  padding: 3px;
+  border-radius: 10%;
+  cursor: pointer;
+}
 
 .info {
   font-size: 2vh;
@@ -18,7 +29,9 @@ table {
 
 .f {
   width: 90%;
-  justify-self: center;
+  transform: translateX(-40%);
+  position: absolute;
+  left: 50%;
 }
 
 th {

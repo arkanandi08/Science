@@ -69,6 +69,7 @@
       position: absolute;
       left: 50%;
       top: 170%;
+      cursor: pointer;
       transform: translate(-50%, -50%);
     }
 

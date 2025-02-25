@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="math.js"></script>
+  <script src="script.js"></script>
   <title>
     Math Calculators
   </title>
@@ -13,6 +14,9 @@
 
 <body onload="cl()">
   <h1 align="center">MATHS CALCULATORS</h1>
+  <p class="bck" onclick="bck()">
+    <i class="fa fa-arrow-left"></i> Back
+  </p>
     <div class="mathcal" id="mc3" onclick="calculator()"><span class="text">Digital Calculator</span></div>
     <div class="mathcal" id="mc0" onclick="trigop()"><span class="text">Trigonometry</span>
     </div>
@@ -32,11 +36,11 @@
         <button type="reset" onclick="clr()">Clear</button>
       </section>
       <section id="csc">
-        cosec(<input type="number" name="cs" value="0"><sup><i class="fa fa-circle-o" aria-hidden="true"></i></sup>) = <div id="cosec"></div><br>
+        cosec(<input type="number" name="cs" value="0">°) = <div id="cosec"></div><br>
         <aside onclick="inv2()" class="nexttrig" id="lnt">
           <i class="fa fa-arrow-circle-left"></i> </aside>
-        sec(<input type="number" name="sc" value="0"><sup><i class="fa fa-circle-o" aria-hidden="true"></i></sup>) = <div id="sec"></div><br>
-        cot(<input type="number" name="ct" value="0"><sup><i class="fa fa-circle-o" aria-hidden="true"></i></sup>) = <div id="cot"></div><br>
+        sec(<input type="number" name="sc" value="0">°) = <div id="sec"></div><br>
+        cot(<input type="number" name="ct" value="0">°) = <div id="cot"></div><br>
         <button onclick="trig2()" type="button">Check</button>
         <button type="reset" onclick="clr()">Clear</button>
       </section>
@@ -88,13 +92,13 @@
         <div id="areahex"></div><br>
         <button type="reset" onclick="clr()">Clear</button>
       </section>
-      <section id="hep">
-        <h4 align="center"><u>5. Regular Heptagon</u></h4>
-        Enter value of a side =
-        <input type="number" name="hep1" onkeyup="areacal()"><br><br>
+      <section id="cir">
+        <h4 align="center"><u>5. Circle</u></h4>
+        Enter value of the radius =
+        <input type="number" name="cir1" onkeyup="areacal()"><br><br>
         <aside onclick="dprev()" class="nexttrig" id="aprev"><i class="fa fa-arrow-circle-left"></i></aside>
         Calculated Area =
-        <div id="areahep"></div><br>
+        <div id="areacir"></div><br>
         <button type="reset" onclick="clr()">Clear</button>
       </section>
     </form>
@@ -147,13 +151,13 @@
         <div id="perihex"></div><br>
         <button type="reset" onclick="clr()">Clear</button>
       </section>
-      <section id="phep">
-        <h4 align="center"><u>5. Regular Heptagon</u></h4>
-        Enter value of a side =
-        <input type="number" name="hep1" onkeyup="perical()"><br><br>
+      <section id="pcir">
+        <h4 align="center"><u>5. Circle</u></h4>
+        Enter value of the radius =
+        <input type="number" name="cir1" onkeyup="perical()"><br><br>
         <aside onclick="pdprev()" class="nexttrig" id="paprev"><i class="fa fa-arrow-circle-left"></i></aside>
         Calculated Perimeter =
-        <div id="perihep"></div><br>
+        <div id="pericir"></div><br>
         <button type="reset" onclick="clr()">Clear</button>
       </section>
       </section>

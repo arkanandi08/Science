@@ -20,6 +20,7 @@ header {
     position: absolute;
     top: 50%;
     transform: translate(0%, -30%);
+    cursor: pointer;
   }
 
   #rocket2 {
@@ -29,6 +30,7 @@ header {
     position: absolute;
     top: 50%;
     transform: translate(0%, -30%);
+    cursor: pointer;
   }
 
   #rocket1 img {
@@ -68,6 +70,13 @@ header {
     top: 10%;
     right: 2vh;
     transform: translate(0%, -5%);
+  }
+  .exit {
+    opacity: 0;
+    color: #FF0000;
+  }
+  #rocket2:hover .exit {
+    opacity: 1;
   }
 
   #rocket1:hover .shipL {
@@ -115,18 +124,11 @@ header {
   z-index: 1;
   border-radius: 50%;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .planetim:hover {
   box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.7);
   width: 80vh;
   left: 50%;
-}
-.x {
-  justify-self: right;
-  color: red;
-  font-size: 30px;
-  margin-bottom: -20px;
-  margin-right: 20px;
-  width: 2%;
 }

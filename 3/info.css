@@ -9,5 +9,5 @@ color: white
   background: #001C5C;
   padding: 5px;
   border-radius: 10%;
-  width: 14vh;
+  width: 14vh; cursor: pointer;
 }
