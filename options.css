@@ -20,26 +20,28 @@ body {
   font-family: cursive;
   font-weight: bold;
   cursor: pointer;
-  color: #FFFFFF;
   border-radius: 15px;
   transition: transform 0.1s, box-shadow 0.5s;
 }
 
 .math {
   border-color: #00bd85 #2e73a3 #0047de #e6485c;
-  background: linear-gradient(to right, purple, yellow);
+  background: url("math.jpg") no-repeat center center/cover;
   margin-top: 15vh;
+  color: #FFF800;
 }
 
 .chemistry {
   border-color: #ff3d66 #1ab24c #2459c9 #ed468d;
-  background: linear-gradient(to right, green, blue);
+  background: url("chem.jpg") no-repeat center center/cover;
+  color: #FFFFFF;
 }
 
 .universe {
   border-color: #00BD85 #FF0000 #0047DE #4855E6;
-  background: linear-gradient(to right, red, orange);
+  background: url("space/space.jpg") no-repeat center center/cover;
   margin-top: 15vh;
+  color: #FF0000;
 }
 
 .button:hover {
