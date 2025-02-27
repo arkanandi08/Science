@@ -1,17 +1,27 @@
 body {
   color: white;
-  background-color: #212121;
+  background-color: #000000;
+}
+.atm{
+  width: 15%;
+  margin-left: 10%;
+}
+h1{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-right: 25%;
 }
 .bck {
-  position: fixed;
-  top: 1vh;
-  left: 1vh;
   color: white;
   border: 2px solid;
   background: #36365AFC;
   padding: 3px;
   border-radius: 10%;
   cursor: pointer;
+  width: max-content;
 }
 
 .info {
@@ -38,7 +48,7 @@ th {
   width: 5.5%;
   font-size: 10px;
   border-radius: 10%;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
