@@ -4,7 +4,9 @@ body {
 }
 .atm{
   width: 15%;
-  margin-left: 10%;
+  margin-left: 13%;
+  position: relative;
+  top: -1vh;
 }
 h1{
   display: flex;
