@@ -9,10 +9,23 @@ h1 {
   font-size: 7vh;
   border: 3px dashed #FF0000;
   background: linear-gradient(130deg, #7600FF, #0000FF, #00FFFF, #00FF00, #FFFF00, #FF0000);
+  background-size: 300% 300%;
+  animation: bg 2s alternate-reverse infinite;
   padding: 3vh;
   box-shadow: 8px 6px 10px #000000;
   position: sticky;
   top: 0;
+}
+
+@keyframes bg {
+  50% {
+    background-position: left;
+    color: #FFFFFF;
+  }
+
+  100% {
+    background-position: right;
+  }
 }
 
 .bck {

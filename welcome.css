@@ -34,18 +34,27 @@
     @keyframes boxs {
       0% {
         box-shadow: 0px 0px 20px 15px #FF0000;
+        color: #FF0000;
       }
+
       25% {
         box-shadow: 0px 0px 20px 15px #FFF400;
+        color: #FFF400;
       }
+
       50% {
         box-shadow: 0px 0px 20px 15px #20FF00;
+        color: #20FF00;
       }
+
       75% {
         box-shadow: 0px 0px 20px 15px #0053FF;
+        color: #0053FF;
       }
+
       100% {
         box-shadow: 0px 0px 20px 15px #8000FF;
+        color: #8000FF;
       }
     }
 
@@ -77,7 +86,6 @@
 
     .btn {
       display: inline-block;
-      padding: 12px 25px;
       background: linear-gradient(90deg, #ff9800, #e91e63);
       color: white;
       text-decoration: none;
@@ -90,10 +98,22 @@
       top: 190%;
       cursor: pointer;
       transform: translate(-50%, -50%);
+      animation: but 1s alternate infinite;
+      transition: ease-in-out 1s;
+      padding: 15px 27px;
+    }
+
+    @keyframes but {
+      0% {
+        padding: 20px 32px;
+      }
+      100% {
+        padding: 25px 37px;
+      }
     }
 
     .btn:hover {
-      background: linear-gradient(90deg, #e91e63, #ff9800);
+      background: #e91e63;
       box-shadow: 0px 4px 10px rgba(233, 30, 99, 0.5);
       padding: 15px 27px;
     }

@@ -22,23 +22,29 @@ body {
   cursor: pointer;
   border-radius: 15px;
   transition: transform 0.1s, box-shadow 0.5s;
+  animation: bor alternate infinite 1s;
 }
 
 .math {
-  border-color: #00bd85 #2e73a3 #0047de #e6485c;
   background: url("math.jpg") no-repeat center center/cover;
   margin-top: 15vh;
   color: #FFF800;
 }
+@keyframes bor{
+  50%{
+    border-color: #FF0000 #FFF100 #00FF26 #1900FF;
+  }
+  100%{
+    border-color: #00FF26 #1900FF #FF0000 #FFF100;
+  }
+}
 
 .chemistry {
-  border-color: #ff3d66 #1ab24c #2459c9 #ed468d;
   background: url("chem.jpg") no-repeat center center/cover;
   color: #FFFFFF;
 }
 
 .universe {
-  border-color: #00BD85 #FF0000 #0047DE #4855E6;
   background: url("space/space.jpg") no-repeat center center/cover;
   margin-top: 15vh;
   color: #FF0000;
