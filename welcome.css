@@ -106,9 +106,11 @@
     @keyframes but {
       0% {
         padding: 20px 32px;
+        font-size: 4.5vh;
       }
       100% {
         padding: 25px 37px;
+        font-size: 5vh;
       }
     }
 
