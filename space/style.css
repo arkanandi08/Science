@@ -9,6 +9,14 @@ header {
   top: 0;
   right: 0;
 }
+header a{
+  text-decoration: none;
+  color: white;
+  font-size: 6vh;
+  position: absolute;
+  right: 1vh;
+  top: 1vh;
+}
 
 .shipL {
   rotate: 180deg;
